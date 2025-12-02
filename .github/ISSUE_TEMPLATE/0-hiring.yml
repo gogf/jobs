@@ -143,8 +143,9 @@ body:
     attributes:
       value: |
         ### 🔗 联系方式
+
   - type: textarea
-    id: job_description
+    id: contact_info
     attributes:
       label: 联系方式
       placeholder: 邮箱/电话/其他联系方式
