@@ -2,10 +2,9 @@
 # https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
 name: "1.招聘"
 description: "发布职位招聘信息"
-title: "[招聘]"
+title: "[招聘] "
 labels:
   - "招聘"
-milestone: 2
 
 body:
   - type: markdown
