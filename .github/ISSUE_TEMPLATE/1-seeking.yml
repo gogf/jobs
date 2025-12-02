@@ -1,36 +1,43 @@
 name: 求职信息
 description: 发布个人求职信息
 title: "[求职] "
-labels: ["求职"]
+labels:
+  - 求职
+milestone: ""
+
 body:
   - type: markdown
     attributes:
       value: |
         欢迎分享你的求职信息！请填写以下信息帮助招聘者了解你的背景和需求。
 
-  - type: section
+  - type: markdown
     attributes:
-      label: "👤 个人信息"
+      value: |
+        ### 👤 个人信息
 
-  - type: text
+  - type: input
     id: name
     attributes:
       label: 姓名
       placeholder: 例如：李明
+    validations:
       required: true
 
-  - type: text
+  - type: input
     id: years_experience
     attributes:
       label: 从业年限
       placeholder: 例如：3 年
+    validations:
       required: true
 
-  - type: text
+  - type: input
     id: current_city
     attributes:
       label: 当前城市
       placeholder: 例如：北京
+    validations:
       required: true
 
   - type: dropdown
@@ -50,6 +57,7 @@ body:
         - 广州
         - 苏州
         - 其他地区
+    validations:
       required: true
 
   - type: dropdown
@@ -61,11 +69,11 @@ body:
         - 兼职
         - 实习
         - 都可以
-      required: true
-
-  - type: section
+    validations:
+  - type: markdown
     attributes:
-      label: "💻 技能清单"
+      value: |
+        ### 💻 技能清单
 
   - type: textarea
     id: main_skills
@@ -77,6 +85,7 @@ body:
         - PostgreSQL (4年)
         - Redis (3年)
         - Docker (3年)
+    validations:
       required: true
 
   - type: textarea
@@ -87,6 +96,7 @@ body:
         - 后端开发
         - 数据库设计
         - 系统架构
+    validations:
       required: true
 
   - type: textarea
@@ -95,17 +105,18 @@ body:
       label: 次要技能
       placeholder: |
         - JavaScript
-        - React
-
-  - type: section
+        - Reacter: |
+  - type: markdown
     attributes:
-      label: "💰 薪资期望"
+      value: |
+        ### 💰 薪资期望
 
-  - type: text
+  - type: input
     id: salary_expectation
     attributes:
       label: 期望薪资范围
       placeholder: 例如：25k-35k/月
+    validations:
       required: true
 
   - type: dropdown
@@ -115,36 +126,41 @@ body:
       options:
         - "是"
         - "否"
+    validations:
       required: true
-
-  - type: section
+        - "是"
+  - type: markdown
     attributes:
-      label: "📚 教育背景"
+      value: |
+        ### 📚 教育背景
 
-  - type: text
+  - type: input
     id: education
     attributes:
       label: 学历
       placeholder: 例如：本科 计算机科学与技术
+    validations:
       required: true
 
-  - type: text
+  - type: input
     id: university
     attributes:
       label: 毕业学校
       placeholder: 例如：北京大学
+    validations:
       required: true
 
-  - type: text
+  - type: input
     id: graduation_year
     attributes:
       label: 毕业年份
       placeholder: 例如：2020
+    validations:
       required: true
-
-  - type: section
+  - type: markdown
     attributes:
-      label: "🏢 工作经验"
+      value: |
+        ### 🏢 工作经验
 
   - type: textarea
     id: work_experience
@@ -165,34 +181,40 @@ body:
         - 主要成就：
           - 从 0 到 1 搭建支付系统
           - 带领 3 人团队完成核心业务模块
-      required: true
-
-  - type: section
+    validations:
+      required: true07 - 2020.06
+        - 主要成就：
+          - 从 0 到 1 搭建支付系统
+          - 带领 3 人团队完成核心业务模块
+  - type: markdown
     attributes:
-      label: "🔗 联系方式"
+      value: |
+        ### 🔗 联系方式
 
-  - type: email
+  - type: input
     id: email
     attributes:
       label: 邮箱
+      placeholder: 例如：contact@example.com
+    validations:
       required: true
 
-  - type: text
+  - type: input
     id: phone
     attributes:
       label: 电话
       placeholder: 例如：+86 13800138000
+    validations:
       required: true
 
-  - type: text
+  - type: input
     id: contact_other
     attributes:
       label: 其他联系方式
-      placeholder: "例如：WeChat: xxx, 钉钉: xxx, GitHub: https://github.com/xxx"
-
-  - type: section
+  - type: markdown
     attributes:
-      label: "📌 其他信息"
+      value: |
+        ### 📌 其他信息
 
   - type: checkboxes
     id: preferences
@@ -211,7 +233,11 @@ body:
       label: 个人描述
       placeholder: 简短介绍自己的职业目标、个人特色和职业规划
 
-  - type: text
+  - type: input
+    id: portfolio_links
+    attributes:
+      label: 作品链接
+      placeholder: "例如：GitHub: https://github.com/xxx, 个人博客: https://xxx.com, 作品集: https://xxx.com"
     id: portfolio_links
     attributes:
       label: 作品链接
