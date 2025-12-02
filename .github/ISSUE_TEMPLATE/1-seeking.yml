@@ -3,7 +3,6 @@ description: 发布个人求职信息
 title: "[求职] "
 labels:
   - 求职
-milestone: ""
 
 body:
   - type: markdown

@@ -5,7 +5,6 @@ description: GoFrame command, module, or anything else
 title: "os/gtime: issue title"
 labels:
   - bug
-milestone: ""
 
 body:
   - type: markdown
