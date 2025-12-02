@@ -40,26 +40,10 @@ body:
       placeholder: 例如：2 人
     validations:
       required: true
-
-  - type: dropdown
-    id: work_location
+  - type: markdown
     attributes:
-      label: 工作地点
-      description: 请选择工作地点（可后续添加更多 Label）
-      options:
-        - 远程
-        - 北京
-        - 上海
-        - 深圳
-        - 杭州
-        - 成都
-        - 南京
-        - 西安
-        - 广州
-        - 苏州
-        - 其他
-    validations:
-      required: true
+      value: |
+        ### 请在Label选择工作地点
 
   - type: dropdown
     id: work_type
@@ -82,9 +66,7 @@ body:
     attributes:
       label: 必需技能
       placeholder: |
-        - Python 3年以上经验
-        - 熟悉分布式系统
-        - 良好的代码规范意识
+        - golang 熟练
     validations:
       required: true
 
@@ -161,36 +143,13 @@ body:
     attributes:
       value: |
         ### 🔗 联系方式
-
-  - type: input
-    id: contact_name
+  - type: textarea
+    id: job_description
     attributes:
-      label: 联系人
-      placeholder: 例如：张三
+      label: 联系方式
+      placeholder: 邮箱/电话/其他联系方式
     validations:
       required: true
-
-  - type: input
-    id: contact_email
-    attributes:
-      label: 邮箱
-      placeholder: 例如：contact@example.com
-    validations:
-      required: true
-
-  - type: input
-    id: contact_phone
-    attributes:
-      label: 电话
-      placeholder: 例如：+86 13800138000
-    validations:
-      required: true
-
-  - type: input
-    id: contact_other
-    attributes:
-      label: 其他联系方式
-      placeholder: "例如：WeChat: xxx, 钉钉: xxx"
 
   - type: markdown
     attributes:
@@ -206,9 +165,3 @@ body:
         - label: 可协商薪资
         - label: 有技术分享机会
         - label: 有晋升空间
-
-  - type: textarea
-    id: additional_info
-    attributes:
-      label: 补充说明
-      placeholder: 其他需要特别说明的信息
