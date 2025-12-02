@@ -150,6 +150,7 @@ body:
       placeholder: 邮箱/电话/其他联系方式
     validations:
       required: true
+  
 
   - type: markdown
     attributes:
@@ -165,3 +166,5 @@ body:
         - label: 可协商薪资
         - label: 有技术分享机会
         - label: 有晋升空间
+
+
