@@ -4,7 +4,7 @@ name: 求职信息
 description: 发布个人求职信息
 title: "[求职] "
 labels:
-  - "求职"
+  - bug
 
 body:
   - type: markdown
