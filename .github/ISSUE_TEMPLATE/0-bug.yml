@@ -1,10 +1,8 @@
 # https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#creating-issue-forms
 # https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
 name: "bug招聘"
-description: "招聘  Report a bug to help us improve GoFrame"
+description: "发布职位招聘信息"
 title: "[招聘]"
-labels:
-  - bug
 
 body:
   - type: markdown
