@@ -1,5 +1,7 @@
 # 人才市场
 
+## 点击直达[招聘](https://github.com/gogf/jobs/milestone/1)/[求职](https://github.com/gogf/jobs/milestone/2)
+
 ## 📋 仓库说明
 
 这是一个专门为**开发人员求职和企业招聘**服务的仓库。通过 GitHub Issue 的形式，我们统一管理和记录各类招聘与求职信息。
