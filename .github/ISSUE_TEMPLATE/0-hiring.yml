@@ -1,4 +1,5 @@
-name: "招聘"
+# name必须字母或者数字开头，否则不显示
+name: "1.招聘"
 description: "发布职位招聘信息"
 title: "[公司名称] 招聘 [岗位名称]"
 labels:
