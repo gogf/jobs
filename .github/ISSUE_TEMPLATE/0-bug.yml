@@ -1,6 +1,6 @@
 # https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#creating-issue-forms
 # https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
-name: bug
+name: "bug招聘"
 description: "招聘  Report a bug to help us improve GoFrame"
 title: "[招聘]"
 labels:
