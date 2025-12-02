@@ -1,211 +1,211 @@
 name: "招聘信息"
 description: "发布职位招聘信息"
 title: "[招聘] "
-labels:
-  - "招聘"
+# labels:
+#   - "招聘"
 
-body:
-  - type: markdown
-    attributes:
-      value: |
-        感谢你发布招聘信息！请填写以下信息帮助求职者了解职位详情。
+# body:
+#   - type: markdown
+#     attributes:
+#       value: |
+#         感谢你发布招聘信息！请填写以下信息帮助求职者了解职位详情。
 
-  - type: markdown
-    attributes:
-      value: |
-        ### 📋 基本信息
+#   - type: markdown
+#     attributes:
+#       value: |
+#         ### 📋 基本信息
 
-  - type: input
-    id: company_name
-    attributes:
-      label: 公司名称
-      placeholder: 例如：字节跳动
-    validations:
-      required: true
+#   - type: input
+#     id: company_name
+#     attributes:
+#       label: 公司名称
+#       placeholder: 例如：字节跳动
+#     validations:
+#       required: true
 
-  - type: input
-    id: position_name
-    attributes:
-      label: 招聘岗位
-      placeholder: 例如：Senior Backend Engineer
-    validations:
-      required: true
+#   - type: input
+#     id: position_name
+#     attributes:
+#       label: 招聘岗位
+#       placeholder: 例如：Senior Backend Engineer
+#     validations:
+#       required: true
 
-  - type: input
-    id: position_count
-    attributes:
-      label: 招聘数量
-      placeholder: 例如：2 人
-    validations:
-      required: true
+#   - type: input
+#     id: position_count
+#     attributes:
+#       label: 招聘数量
+#       placeholder: 例如：2 人
+#     validations:
+#       required: true
 
-  - type: dropdown
-    id: work_location
-    attributes:
-      label: 工作地点
-      description: 请选择工作地点（可后续添加更多 Label）
-      options:
-        - 远程
-        - 北京
-        - 上海
-        - 深圳
-        - 杭州
-        - 成都
-        - 南京
-        - 西安
-        - 广州
-        - 苏州
-        - 其他
-      required: true
+#   - type: dropdown
+#     id: work_location
+#     attributes:
+#       label: 工作地点
+#       description: 请选择工作地点（可后续添加更多 Label）
+#       options:
+#         - 远程
+#         - 北京
+#         - 上海
+#         - 深圳
+#         - 杭州
+#         - 成都
+#         - 南京
+#         - 西安
+#         - 广州
+#         - 苏州
+#         - 其他
+#       required: true
 
-  - type: dropdown
-    id: work_type
-    attributes:
-      label: 工作类型
-      options:
-        - 全职
-        - 兼职
-        - 实习
-    validations:
-      required: true
+#   - type: dropdown
+#     id: work_type
+#     attributes:
+#       label: 工作类型
+#       options:
+#         - 全职
+#         - 兼职
+#         - 实习
+#     validations:
+#       required: true
 
-  - type: markdown
-    attributes:
-      value: |
-        ### 💼 职位要求
+#   - type: markdown
+#     attributes:
+#       value: |
+#         ### 💼 职位要求
 
-  - type: textarea
-    id: required_skills
-    attributes:
-      label: 必需技能
-      placeholder: |
-        - Python 3年以上经验
-        - 熟悉分布式系统
-        - 良好的代码规范意识
-    validations:
-      required: true
+#   - type: textarea
+#     id: required_skills
+#     attributes:
+#       label: 必需技能
+#       placeholder: |
+#         - Python 3年以上经验
+#         - 熟悉分布式系统
+#         - 良好的代码规范意识
+#     validations:
+#       required: true
 
-  - type: textarea
-    id: preferred_qualifications
-    attributes:
-      label: 优先条件
-      placeholder: |
-        - 有开源项目经验
-        - 有大厂工作经验
-        - 有团队管理经验
+#   - type: textarea
+#     id: preferred_qualifications
+#     attributes:
+#       label: 优先条件
+#       placeholder: |
+#         - 有开源项目经验
+#         - 有大厂工作经验
+#         - 有团队管理经验
 
-  - type: input
-    id: work_experience
-    attributes:
-      label: 工作经验要求
-      placeholder: 例如：3-5 年
-    validations:
-      required: true
+#   - type: input
+#     id: work_experience
+#     attributes:
+#       label: 工作经验要求
+#       placeholder: 例如：3-5 年
+#     validations:
+#       required: true
 
-  - type: dropdown
-    id: education
-    attributes:
-      label: 学历要求
-      options:
-        - 不限
-        - 高中
-        - 大专
-        - 本科
-        - 硕士
-        - 博士
-    validations:
-      required: true
+#   - type: dropdown
+#     id: education
+#     attributes:
+#       label: 学历要求
+#       options:
+#         - 不限
+#         - 高中
+#         - 大专
+#         - 本科
+#         - 硕士
+#         - 博士
+#     validations:
+#       required: true
 
-  - type: markdown
-    attributes:
-      value: |
-        ### 💰 薪资与福利
+#   - type: markdown
+#     attributes:
+#       value: |
+#         ### 💰 薪资与福利
 
-  - type: input
-    id: salary_range
-    attributes:
-      label: 薪资范围
-      placeholder: 例如：30k-50k/月
-    validations:
-      required: true
+#   - type: input
+#     id: salary_range
+#     attributes:
+#       label: 薪资范围
+#       placeholder: 例如：30k-50k/月
+#     validations:
+#       required: true
 
-  - type: textarea
-    id: benefits
-    attributes:
-      label: 福利待遇
-      placeholder: |
-        - 五险一金
-        - 年假 15 天
-        - 股票期权
-        - 免费午餐
-    validations:
-      required: true
+#   - type: textarea
+#     id: benefits
+#     attributes:
+#       label: 福利待遇
+#       placeholder: |
+#         - 五险一金
+#         - 年假 15 天
+#         - 股票期权
+#         - 免费午餐
+#     validations:
+#       required: true
 
-  - type: markdown
-    attributes:
-      value: |
-        ### 📝 职位描述
+#   - type: markdown
+#     attributes:
+#       value: |
+#         ### 📝 职位描述
 
-  - type: textarea
-    id: job_description
-    attributes:
-      label: 职位描述
-      placeholder: 详细描述职位职责、工作内容、团队规模、项目特色等
-    validations:
-      required: true
+#   - type: textarea
+#     id: job_description
+#     attributes:
+#       label: 职位描述
+#       placeholder: 详细描述职位职责、工作内容、团队规模、项目特色等
+#     validations:
+#       required: true
 
-  - type: markdown
-    attributes:
-      value: |
-        ### 🔗 联系方式
+#   - type: markdown
+#     attributes:
+#       value: |
+#         ### 🔗 联系方式
 
-  - type: input
-    id: contact_name
-    attributes:
-      label: 联系人
-      placeholder: 例如：张三
-    validations:
-      required: true
+#   - type: input
+#     id: contact_name
+#     attributes:
+#       label: 联系人
+#       placeholder: 例如：张三
+#     validations:
+#       required: true
 
-  - type: input
-    id: contact_email
-    attributes:
-      label: 邮箱
-      placeholder: 例如：contact@example.com
-    validations:
-      required: true
+#   - type: input
+#     id: contact_email
+#     attributes:
+#       label: 邮箱
+#       placeholder: 例如：contact@example.com
+#     validations:
+#       required: true
 
-  - type: input
-    id: contact_phone
-    attributes:
-      label: 电话
-      placeholder: 例如：+86 13800138000
-    validations:
-      required: true
+#   - type: input
+#     id: contact_phone
+#     attributes:
+#       label: 电话
+#       placeholder: 例如：+86 13800138000
+#     validations:
+#       required: true
 
-  - type: input
-    id: contact_other
-    attributes:
-      label: 其他联系方式
-      placeholder: "例如：WeChat: xxx, 钉钉: xxx"
+#   - type: input
+#     id: contact_other
+#     attributes:
+#       label: 其他联系方式
+#       placeholder: "例如：WeChat: xxx, 钉钉: xxx"
 
-  - type: markdown
-    attributes:
-      value: |
-        ### 📌 其他信息
+#   - type: markdown
+#     attributes:
+#       value: |
+#         ### 📌 其他信息
 
-  - type: checkboxes
-    id: benefits_check
-    attributes:
-      label: 其他特色
-      options:
-        - label: 远程友好
-        - label: 可协商薪资
-        - label: 有技术分享机会
-        - label: 有晋升空间
+#   - type: checkboxes
+#     id: benefits_check
+#     attributes:
+#       label: 其他特色
+#       options:
+#         - label: 远程友好
+#         - label: 可协商薪资
+#         - label: 有技术分享机会
+#         - label: 有晋升空间
 
-  - type: textarea
-    id: additional_info
-    attributes:
-      label: 补充说明
-      placeholder: 其他需要特别说明的信息
+#   - type: textarea
+#     id: additional_info
+#     attributes:
+#       label: 补充说明
+#       placeholder: 其他需要特别说明的信息
