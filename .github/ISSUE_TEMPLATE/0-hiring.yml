@@ -1,9 +1,8 @@
-name: 招聘信息
-description: 发布职位招聘信息
+name: "招聘信息"
+description: "发布职位招聘信息"
 title: "[招聘] "
 labels:
-  - 招聘
-milestone: "招聘"
+  - "招聘"
 
 body:
   - type: markdown
