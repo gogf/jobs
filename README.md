@@ -1,59 +1,12 @@
 # 人才市场
 
-## 点击直达[招聘](https://github.com/gogf/jobs/milestone/1)/[求职](https://github.com/gogf/jobs/milestone/2)
+有谁在[招聘](https://github.com/gogf/jobs/issues?q=state%3Aopen%20label%3A%E6%8B%9B%E8%81%98)/[求职](https://github.com/gogf/jobs/issues?q=state%3Aopen%20label%3A%E6%B1%82%E8%81%8C)？
+
+我要发布[招聘](https://github.com/gogf/jobs/issues/new?template=0-hiring.yml)/[求职](https://github.com/gogf/jobs/issues/new?template=0-seeking.yml)信息
 
 ## 📋 仓库说明
 
 这是一个专门为**开发人员求职和企业招聘**服务的仓库。通过 GitHub Issue 的形式，我们统一管理和记录各类招聘与求职信息。
-
-## 🎯 主要用途
-
-- **求职登记**：开发人员可以发布求职信息、简历、技能要求等
-- **招聘发布**：企业可以发布职位空缺、招聘需求、薪资范围等
-- **人才对接**：帮助求职者和招聘方快速找到合适的机会
-- **资料共享**：存储和共享与招聘、求职相关的各类材料
-
-## 📝 使用方式
-
-### 1. 区分招聘和求职
-
-使用 **Milestones** 来区分招聘和求职两类信息：
-
-- **Hiring（招聘）**：企业发布的职位招聘信息
-- **Seeking（求职）**：开发人员发布的求职信息
-
-创建 Issue 时，在右侧面板选择相应的 Milestone，快速分类。
-
-### 2. Label 分类
-
-使用 **Label** 来标注地区和工作特性，便于快速筛选：
-
-#### 🌍 地区标签
-
-- `远程` - 完全远程工作
-- `北京` - 北京地区
-- `上海` - 上海地区
-- `深圳` - 深圳地区
-- `杭州` - 杭州地区
-- `成都` - 成都地区
-- 其他地区...
-
-### 3. 信息格式
-
-使用预定义的 Issue 模板来规范信息格式，确保信息完整且易于阅读。
-
-### 4. Issue 管理
-
-- 创建 Issue 时选择合适的 **Milestone**（区分招聘/求职）
-- 添加相关的 **Label**（标注地区和工作特性）
-- 通过 Issue 的讨论功能进行交流和对接
-- 完成相关需求后及时关闭 Issue
-
-## 💼 适用人群
-
-- **求职的开发人员**：寻找合适的工作机会
-- **招聘的企业/团队**：发布职位招聘信息
-- **行业从业者**：分享经验和资源
 
 ## 🤝 参与方式
 
