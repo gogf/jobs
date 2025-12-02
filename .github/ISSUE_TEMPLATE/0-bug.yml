@@ -1,10 +1,10 @@
 # https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#creating-issue-forms
 # https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
-name: Bugs
-description: GoFrame command, module, or anything else
-title: "os/gtime: issue title"
+name: 求职信息
+description: 发布个人求职信息
+title: "[求职] "
 labels:
-  - bug
+  - "求职"
 
 body:
   - type: markdown
