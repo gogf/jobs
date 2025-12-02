@@ -1,7 +1,7 @@
 # name必须字母或者数字开头，否则不显示
 name: "1.招聘"
 description: "发布职位招聘信息"
-title: "[公司名称] 招聘 [岗位名称]"
+title: "[公司名称]招聘[岗位名称]"
 labels:
   - "招聘"
 
@@ -54,7 +54,7 @@ body:
       label: 任职要求
       placeholder: |
         - 3-5 年相关工作经验
-        - 精通 Golang，熟悉常用框架
+        - 精通 Golang，熟悉GoFrame框架
         - 本科及以上学历
         - 有大厂经验者优先
     validations:
@@ -69,7 +69,7 @@ body:
     id: salary_range
     attributes:
       label: 薪资范围
-      placeholder: 例如：20-40k/月
+      placeholder: 例如：10-40k/月
     validations:
       required: true
 
