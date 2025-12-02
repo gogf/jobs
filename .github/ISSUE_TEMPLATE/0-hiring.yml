@@ -4,11 +4,11 @@ title: "[招聘] "
 # labels:
 #   - "招聘"
 
-# body:
-#   - type: markdown
-#     attributes:
-#       value: |
-#         感谢你发布招聘信息！请填写以下信息帮助求职者了解职位详情。
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你发布招聘信息！请填写以下信息帮助求职者了解职位详情。
 
 #   - type: markdown
 #     attributes:
