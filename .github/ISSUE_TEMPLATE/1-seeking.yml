@@ -1,6 +1,6 @@
-name: 求职信息
-description: 发布个人求职信息
-title: "[求职] "
+name: "2.求职"
+description: "发布个人求职信息"
+title: "[大佬名字]求职[岗位方向]"
 labels:
   - "求职"
 
@@ -8,236 +8,102 @@ body:
   - type: markdown
     attributes:
       value: |
-        欢迎分享你的求职信息！请填写以下信息帮助招聘者了解你的背景和需求。
+        ### 👤 基本信息
 
-  # - type: markdown
-  #   attributes:
-  #     value: |
-  #       ### 👤 个人信息
+  - type: input
+    id: position_target
+    attributes:
+      label: 求职岗位
+      placeholder: 例如：高级后端工程师
+    validations:
+      required: true
 
-  # - type: input
-  #   id: name
-  #   attributes:
-  #     label: 姓名
-  #     placeholder: 例如：李明
-  #   validations:
-  #     required: true
+  - type: input
+    id: years_experience
+    attributes:
+      label: 工作年限
+      placeholder: 例如：3-5 年
+    validations:
+      required: true
 
-  # - type: input
-  #   id: years_experience
-  #   attributes:
-  #     label: 从业年限
-  #     placeholder: 例如：3 年
-  #   validations:
-  #     required: true
+  - type: dropdown
+    id: work_type
+    attributes:
+      label: 期望类型
+      options:
+        - 全职
+        - 兼职
+        - 实习
+        - 不限
+    validations:
+      required: true
 
-  # - type: input
-  #   id: current_city
-  #   attributes:
-  #     label: 当前城市
-  #     placeholder: 例如：北京
-  #   validations:
-  #     required: true
+  - type: markdown
+    attributes:
+      value: |
+        > 💡 请在右侧 Labels 中选择期望工作地点
 
-  # - type: dropdown
-  #   id: work_location_preference
-  #   attributes:
-  #     label: 期望工作地点
-  #     description: 可多选（在 Issue 中添加对应 Label）
-  #     options:
-  #       - 远程
-  #       - 北京
-  #       - 上海
-  #       - 深圳
-  #       - 杭州
-  #       - 成都
-  #       - 南京
-  #       - 西安
-  #       - 广州
-  #       - 苏州
-  #       - 其他地区
-  #   validations:
-  #     required: true
+  - type: markdown
+    attributes:
+      value: |
+        ### 💻 技能与经验
 
-  # - type: dropdown
-  #   id: work_type_preference
-  #   attributes:
-  #     label: 工作类型偏好
-  #     options:
-  #       - 全职
-  #       - 兼职
-  #       - 实习
-  #       - 都可以
-  #   validations:
-  # - type: markdown
-  #   attributes:
-  #     value: |
-  #       ### 💻 技能清单
+  - type: textarea
+    id: skills_experience
+    attributes:
+      label: 技能与工作经历
+      placeholder: |
+        - 精通 Golang，5 年开发经验
+        - 熟悉微服务架构，有高并发系统设计经验
+        - 曾任职于字节跳动，负责推荐系统研发
+        - 本科学历，计算机相关专业
+    validations:
+      required: true
 
-  # - type: textarea
-  #   id: main_skills
-  #   attributes:
-  #     label: 主要技能
-  #     placeholder: |
-  #       - Python (5年)
-  #       - Django (4年)
-  #       - PostgreSQL (4年)
-  #       - Redis (3年)
-  #       - Docker (3年)
-  #   validations:
-  #     required: true
+  - type: markdown
+    attributes:
+      value: |
+        ### 💰 薪资期望
 
-  # - type: textarea
-  #   id: expert_areas
-  #   attributes:
-  #     label: 擅长领域
-  #     placeholder: |
-  #       - 后端开发
-  #       - 数据库设计
-  #       - 系统架构
-  #   validations:
-  #     required: true
+  - type: input
+    id: salary_expectation
+    attributes:
+      label: 期望薪资
+      placeholder: 例如：10-50k/月
+    validations:
+      required: true
 
-  # - type: textarea
-  #   id: secondary_skills
-  #   attributes:
-  #     label: 次要技能
-  #     placeholder: |
-  #       - JavaScript
-  #       - Reacter: |
-  # - type: markdown
-  #   attributes:
-  #     value: |
-  #       ### 💰 薪资期望
+  - type: markdown
+    attributes:
+      value: |
+        ### 📝 个人简介
 
-  # - type: input
-  #   id: salary_expectation
-  #   attributes:
-  #     label: 期望薪资范围
-  #     placeholder: 例如：25k-35k/月
-  #   validations:
-  #     required: true
+  - type: textarea
+    id: personal_intro
+    attributes:
+      label: 个人介绍
+      placeholder: 简要介绍个人优势、项目经验、职业规划等
+    validations:
+      required: true
 
-  # - type: dropdown
-  #   id: salary_negotiable
-  #   attributes:
-  #     label: 薪资是否可协商
-  #     options:
-  #       - "是"
-  #       - "否"
-  #   validations:
-  #     required: true
-  #       - "是"
-  # - type: markdown
-  #   attributes:
-  #     value: |
-  #       ### 📚 教育背景
+  - type: markdown
+    attributes:
+      value: |
+        ### 📮 联系方式
 
-  # - type: input
-  #   id: education
-  #   attributes:
-  #     label: 学历
-  #     placeholder: 例如：本科 计算机科学与技术
-  #   validations:
-  #     required: true
+  - type: input
+    id: contact_info
+    attributes:
+      label: 联系方式
+      placeholder: 邮箱或其他联系方式
+    validations:
+      required: true
 
-  # - type: input
-  #   id: university
-  #   attributes:
-  #     label: 毕业学校
-  #     placeholder: 例如：北京大学
-  #   validations:
-  #     required: true
-
-  # - type: input
-  #   id: graduation_year
-  #   attributes:
-  #     label: 毕业年份
-  #     placeholder: 例如：2020
-  #   validations:
-  #     required: true
-  # - type: markdown
-  #   attributes:
-  #     value: |
-  #       ### 🏢 工作经验
-
-  # - type: textarea
-  #   id: work_experience
-  #   attributes:
-  #     label: 工作经验
-  #     description: 按时间顺序列出最近的工作经历
-  #     placeholder: |
-  #       **公司 1：字节跳动**
-  #       - 岗位：Senior Backend Engineer
-  #       - 工作时间：2020.07 - 2023.12
-  #       - 主要成就：
-  #         - 负责推荐系统架构设计，日均处理 10 亿+ 请求
-  #         - 优化数据库查询性能，降低 P99 延迟 40%
-
-  #       **公司 2：某创业公司**
-  #       - 岗位：Backend Developer
-  #       - 工作时间：2018.07 - 2020.06
-  #       - 主要成就：
-  #         - 从 0 到 1 搭建支付系统
-  #         - 带领 3 人团队完成核心业务模块
-  #   validations:
-  #     required: true07 - 2020.06
-  #       - 主要成就：
-  #         - 从 0 到 1 搭建支付系统
-  #         - 带领 3 人团队完成核心业务模块
-  # - type: markdown
-  #   attributes:
-  #     value: |
-  #       ### 🔗 联系方式
-
-  # - type: input
-  #   id: email
-  #   attributes:
-  #     label: 邮箱
-  #     placeholder: 例如：contact@example.com
-  #   validations:
-  #     required: true
-
-  # - type: input
-  #   id: phone
-  #   attributes:
-  #     label: 电话
-  #     placeholder: 例如：+86 13800138000
-  #   validations:
-  #     required: true
-
-  # - type: input
-  #   id: contact_other
-  #   attributes:
-  #     label: 其他联系方式
-  # - type: markdown
-  #   attributes:
-  #     value: |
-  #       ### 📌 其他信息
-
-  # - type: checkboxes
-  #   id: preferences
-  #   attributes:
-  #     label: 个人偏好
-  #     options:
-  #       - label: 可立即入职
-  #       - label: 可接受远程工作
-  #       - label: 寻求导师指导
-  #       - label: 对创业公司感兴趣
-  #       - label: 对大厂感兴趣
-
-  # - type: textarea
-  #   id: personal_description
-  #   attributes:
-  #     label: 个人描述
-  #     placeholder: 简短介绍自己的职业目标、个人特色和职业规划
-
-  # - type: input
-  #   id: portfolio_links
-  #   attributes:
-  #     label: 作品链接
-  #     placeholder: "例如：GitHub: https://github.com/xxx, 个人博客: https://xxx.com, 作品集: https://xxx.com"
-  #   id: portfolio_links
-  #   attributes:
-  #     label: 作品链接
-  #     placeholder: "例如：GitHub: https://github.com/xxx, 个人博客: https://xxx.com, 作品集: https://xxx.com"
+  - type: checkboxes
+    id: highlights
+    attributes:
+      label: 个人特点（可选）
+      options:
+        - label: 可立即入职
+        - label: 接受远程工作
+        - label: 有开源项目经验
