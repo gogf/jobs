@@ -19,5 +19,5 @@ jobs:
 #          token: ${{ secrets.GF_TOKEN }}
           labels: 'inactive'
           inactive-day: 30
-          exclude-labels: 'bug,$exclude-empty'
+          exclude-labels: '长期有效,$exclude-empty'
           close-reason: 'not active'
